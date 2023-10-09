@@ -17,9 +17,9 @@
 
     <div id="page">
       <?php if($context->error): ?>
-          <div id="flash_error"  class="error w3-panel w3-red">
-              <h3>Danger!</h3>
-              <?php echo " $context->error !!!!!" ?>
+          <div id="flash_error"  class="error w3-panel w3-red" style="z-index=100; position: absolute; bottom: 0;width:100%; height:max-content">
+              <h3>Erreur!</h3>
+              <?php echo " $context->error !" ?>
           </div>
 
       <?php endif; ?>
